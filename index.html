@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>StyleDiva - Bold Fashion</title>
+<title>NovaWear | Smart Fashion for Gen Z</title>
 
 <style>
 *{
@@ -13,8 +13,9 @@
   font-family:'Segoe UI',sans-serif;
 }
 
+/* Modern gradient background */
 body{
-  background: linear-gradient(120deg,#ff6ec4,#7873f5,#4facfe,#43e97b);
+  background: linear-gradient(120deg,#667eea,#764ba2,#6dd5ed,#2193b0);
   background-size:400% 400%;
   animation:bgmove 12s infinite alternate;
 }
@@ -26,7 +27,7 @@ body{
 
 /* NAVBAR */
 nav{
-  background:rgba(0,0,0,0.8);
+  background:rgba(0,0,0,0.85);
   color:white;
   padding:18px 40px;
   display:flex;
@@ -34,13 +35,12 @@ nav{
   align-items:center;
   position:sticky;
   top:0;
-  z-index:1000;
 }
 
 .logo{
   font-size:26px;
   font-weight:bold;
-  color:#ffd93d;
+  color:#f9f871;
 }
 
 nav ul{
@@ -55,7 +55,7 @@ nav li{
 }
 
 nav li:hover{
-  color:#ffd93d;
+  color:#f9f871;
 }
 
 /* HERO */
@@ -71,12 +71,12 @@ nav li:hover{
 }
 
 .hero p{
-  font-size:20px;
+  font-size:22px;
   margin-bottom:30px;
 }
 
 .btn{
-  background: linear-gradient(45deg,#ffd93d,#ff6ec4);
+  background:#f9f871;
   border:none;
   padding:15px 35px;
   border-radius:30px;
@@ -88,7 +88,6 @@ nav li:hover{
 
 .btn:hover{
   transform:scale(1.1);
-  background:white;
 }
 
 /* SECTION */
@@ -120,7 +119,7 @@ nav li:hover{
 }
 
 .card:hover{
-  transform:translateY(-10px) scale(1.03);
+  transform:translateY(-10px);
 }
 
 .card img{
@@ -130,30 +129,10 @@ nav li:hover{
   border-radius:15px;
 }
 
-.card h3{
-  margin-top:15px;
-  font-size:20px;
-}
-
 .price{
-  color:#ff2e63;
+  color:#2193b0;
   font-weight:bold;
   margin:10px 0;
-  font-size:18px;
-}
-
-.buy{
-  background:linear-gradient(45deg,#4facfe,#43e97b);
-  border:none;
-  padding:10px 20px;
-  border-radius:25px;
-  cursor:pointer;
-  font-weight:bold;
-  transition:0.3s;
-}
-
-.buy:hover{
-  transform:scale(1.1);
 }
 
 /* ABOUT */
@@ -175,14 +154,9 @@ footer{
   margin-top:50px;
 }
 
-/* RESPONSIVE */
 @media(max-width:768px){
   .hero h1{
     font-size:40px;
-  }
-  nav{
-    flex-direction:column;
-    gap:15px;
   }
 }
 </style>
@@ -190,9 +164,8 @@ footer{
 
 <body>
 
-<!-- NAVBAR -->
 <nav>
-  <div class="logo">StyleDiva</div>
+  <div class="logo">NovaWear</div>
   <ul>
     <li>Home</li>
     <li>Shop</li>
@@ -201,57 +174,51 @@ footer{
   </ul>
 </nav>
 
-<!-- HERO SECTION -->
 <section class="hero">
-  <h1>Unleash Your Inner Diva</h1>
-  <p>Bold • Trendy • Confident</p>
-  <button class="btn">Shop Now</button>
+  <h1>Smart Fashion for Gen Z</h1>
+  <p>Trendy • Affordable • Sustainable</p>
+  <button class="btn">Shop Collection</button>
 </section>
 
-<!-- PRODUCTS SECTION -->
 <section class="section">
   <h2 class="title">Trending Collection</h2>
   <div class="grid">
 
     <div class="card">
-      <img src="https://images.unsplash.com/photo-1521572163474-6864f9cf17ab" alt="Top">
-      <h3>Chic Crop Top</h3>
+      <img src="https://images.unsplash.com/photo-1521572163474-6864f9cf17ab" alt="">
+      <h3>Minimal Graphic Tee</h3>
       <div class="price">$29</div>
-      <button class="buy">Buy Now</button>
     </div>
 
     <div class="card">
-      <img src="https://images.unsplash.com/photo-1495121605193-b116b5b09a27" alt="Dress">
-      <h3>Elegant Summer Dress</h3>
+      <img src="https://images.unsplash.com/photo-1495121605193-b116b5b09a27" alt="">
+      <h3>Summer Casual Dress</h3>
       <div class="price">$49</div>
-      <button class="buy">Buy Now</button>
     </div>
 
     <div class="card">
-      <img src="https://images.unsplash.com/photo-1523381210434-271e8be1f52b" alt="Jacket">
-      <h3>Street Style Jacket</h3>
+      <img src="https://images.unsplash.com/photo-1523381210434-271e8be1f52b" alt="">
+      <h3>Streetwear Jacket</h3>
       <div class="price">$89</div>
-      <button class="buy">Buy Now</button>
     </div>
 
   </div>
 </section>
 
-<!-- ABOUT SECTION -->
 <section class="section">
   <div class="about">
-    <h2>About StyleDiva</h2>
+    <h2>About NovaWear</h2>
     <p>
-      StyleDiva is your ultimate destination for bold, vibrant, and empowering fashion.
-      We believe every woman deserves to express her personality through style.
-      Discover collections designed to make you feel confident and unstoppable.
+      NovaWear is a digital-first fashion brand created for Gen Z consumers.
+      Our mission is to combine trend-driven designs with affordability and sustainability.
+      Through social media marketing, influencer collaborations, and targeted ads,
+      NovaWear connects directly with modern customers online.
     </p>
   </div>
 </section>
 
-<!-- FOOTER -->
 <footer>
-  © 2026 StyleDiva | All Rights Reserved
+  © 2026 NovaWear | Digital Marketing Project
 </footer>
 
 </body>
